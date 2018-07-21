@@ -27,7 +27,7 @@ class App extends React.Component {
       username: '',
     }
 
-    this.CLIENT_ID = process.env.CLIENT_ID;
+    // this.CLIENT_ID = process.env.CLIENT_ID;
     // this.CLIENT_ID = config.CLIENT_ID;
   }
 
@@ -129,11 +129,6 @@ class App extends React.Component {
     return (
 
       <Grid>
-
-        debugger
-        <MetaTags>
-          <meta name='google-signin-client_id' content=`${process.env.CLIENT_ID}` />
-        </MetaTags>
 
         <div>
           {button}
