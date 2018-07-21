@@ -64,7 +64,7 @@ module.exports = {
         products = products.items.map((product) => {
           return _objFilter(product);
         })
-        // console.log(products)
+
         // products.items is an array of items
         callback(null, products)
       }
@@ -98,9 +98,9 @@ module.exports = {
 }
 
 
-module.exports.onRequestFetcher('iwatch', (products) => {
-  console.log(products)
-})
+// module.exports.onRequestFetcher('iwatch', (products) => {
+//   console.log(products)
+// })
 
 
 // module.exports.routineFetcher('10789576', (product)=> {
