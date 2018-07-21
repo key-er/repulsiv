@@ -140,13 +140,17 @@ class App extends React.Component {
       var button = <Login userLogin={this.handleLoginStatus} />
     }
 
+
+    componentDidMount() {
+      <MetaTags>
+        <meta name='google-signin-client_id' content= {process.env.CLIENT_ID} />
+      </MetaTags>
+    }
+
+
     return (
 
       <Grid>
-
-        <MetaTags>
-          <meta name='google-signin-client_id' content={this.CLIENT_ID} />
-        </MetaTags>
 
         <div>
           {button}
