@@ -1,6 +1,15 @@
 const request = require('request');
-const config = require('./config.js');
 const nodemailer = require('nodemailer');
+
+try {
+  var config = require('../config.js');
+}
+
+catch(e) {
+  config = {
+    CLIENT_ID: process.env.CLIENT_ID
+  }
+}
 
 
 var _objFilter = function(product) {
