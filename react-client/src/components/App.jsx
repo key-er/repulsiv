@@ -28,15 +28,7 @@ class App extends React.Component {
     }
 
 
-    try {
-      var config = require('../config.js');
-    }
 
-    catch(e) {
-      config = {
-        CLIENT_ID: process.env.CLIENT_ID
-      }
-    }
   }
 
   handleToggleState(toggledItem) {
@@ -120,8 +112,19 @@ class App extends React.Component {
     }
   }
 
-  render () {
+  componentDidMount() {
+    try {
+      var config = require('../config.js');
+    }
 
+    catch(e) {
+      config = {
+        CLIENT_ID: process.env.CLIENT_ID
+      }
+    }
+  }
+
+  render () {
     var isLoggedIn = this.state.isLoggedIn;
     var button;
     var watchList;
@@ -137,7 +140,9 @@ class App extends React.Component {
     }
 
     return (
+
       <Grid>
+
         <MetaTags>
           <meta name='google-signin-client_id' content={config.CLIENT_ID} />
         </MetaTags>
