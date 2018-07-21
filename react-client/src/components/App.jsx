@@ -26,19 +26,9 @@ class App extends React.Component {
       isLoggedIn: false,
       mockData: [],
       username: '',
-
     }
 
-
-    // try {
-    //   import config from '../config.js';
-    // }
-    // catch(e) {
-    //   config = {
-    //     CLIENT_ID: process.env.CLIENT_ID
-    //   }
-    // }
-
+    this.CLIENT_ID = process.env.CLIENT_ID || config.CLIENT_ID;
   }
 
   handleToggleState(toggledItem) {
@@ -154,7 +144,7 @@ class App extends React.Component {
       <Grid>
 
         <MetaTags>
-          <meta name='google-signin-client_id' content={config.CLIENT_ID} />
+          <meta name='google-signin-client_id' content={this.CLIENT_ID} />
         </MetaTags>
 
         <div>
