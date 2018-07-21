@@ -28,7 +28,8 @@ class App extends React.Component {
       username: '',
     }
 
-    this.CLIENT_ID = process.env.CLIENT_ID || config.CLIENT_ID;
+    this.CLIENT_ID = process.env.CLIENT_ID;
+    // this.CLIENT_ID = config.CLIENT_ID;
   }
 
   handleToggleState(toggledItem) {
