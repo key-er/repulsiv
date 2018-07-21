@@ -1,5 +1,5 @@
 {
-  "name": "github-fetcher-fullstack-v2",
+  "name": "repulsiv",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +19,6 @@
     "webpack": "^2.2.1"
   },
   "dependencies": {
-    "angular": "^1.6.3",
     "body-parser": "^1.17.2",
     "chart.js": "^2.7.2",
     "cookie-session": "^2.0.0-beta.3",
