@@ -13,7 +13,14 @@ try {
 
 catch(e) {
   config = {
-    CLIENT_ID: process.env.CLIENT_ID
+    CLIENT_ID: process.env.CLIENT_ID,
+    WALMART_APIKEY: process.env.WALMART_APIKEY,
+    EMAIL_PASS: process.env.EMAIL_PASS,
+    EMAIL_USER: process.env.EMAIL_USER,
+    GMAIL_CLIENT_ID: process.env.GMAIL_CLIENT_ID,
+    GMAIL_SECRET: process.env.GMAIL_SECRET,
+    REFRESH_TOKEN: process.env.REFRESH_TOKEN,
+    ACCESS_TOKEN: process.env.ACCESS_TOKEN
   }
 }
 
