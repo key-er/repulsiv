@@ -7,7 +7,8 @@ try {
 
 catch(e) {
   config = {
-    CLIENT_ID: process.env.CLIENT_ID
+    CLIENT_ID: process.env.CLIENT_ID,
+    WALMART_APIKEY: process.env.WALMART_APIKEY
   }
 }
 
@@ -97,9 +98,9 @@ module.exports = {
 }
 
 
-// module.exports.onRequestFetcher('iwatch', (products) => {
-//   console.log(products)
-// })
+module.exports.onRequestFetcher('iwatch', (products) => {
+  console.log(products)
+})
 
 
 // module.exports.routineFetcher('10789576', (product)=> {
