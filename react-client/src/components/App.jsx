@@ -7,9 +7,7 @@ import Toggle from 'react-toggle';
 import $ from 'jquery';
 import { Grid, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import MetaTags from 'react-meta-tags';
 var sampleData = require('../mockData.js');
-// var config = require('../config.js')
 
 
 class App extends React.Component {
