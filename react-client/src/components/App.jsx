@@ -108,22 +108,9 @@ class App extends React.Component {
           })
         })
       }
-
-
     }
   }
 
-  // componentDidMount() {
-  //   try {
-  //     var config = require('../config.js');
-  //   }
-
-  //   catch(e) {
-  //     config = {
-  //       CLIENT_ID: process.env.CLIENT_ID
-  //     }
-  //   }
-  // }
 
   render () {
     var isLoggedIn = this.state.isLoggedIn;
@@ -140,17 +127,13 @@ class App extends React.Component {
       var button = <Login userLogin={this.handleLoginStatus} />
     }
 
-
-    componentDidMount() {
-      <MetaTags>
-        <meta name='google-signin-client_id' content= {process.env.CLIENT_ID} />
-      </MetaTags>
-    }
-
-
     return (
 
       <Grid>
+
+        <MetaTags>
+          <meta name='google-signin-client_id' content={process.env.CLIENT_ID} />
+        </MetaTags>
 
         <div>
           {button}
