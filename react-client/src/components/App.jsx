@@ -132,7 +132,7 @@ class App extends React.Component {
 
         debugger
         <MetaTags>
-          <meta name='google-signin-client_id' content={process.env.CLIENT_ID} />
+          <meta name='google-signin-client_id' content=`${process.env.CLIENT_ID}` />
         </MetaTags>
 
         <div>
