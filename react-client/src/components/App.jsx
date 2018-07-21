@@ -11,7 +11,6 @@ import MetaTags from 'react-meta-tags';
 var sampleData = require('../mockData.js');
 // var config = require('../config.js')
 
-debugger
 
 class App extends React.Component {
   constructor(props) {
@@ -131,6 +130,7 @@ class App extends React.Component {
 
       <Grid>
 
+        debugger
         <MetaTags>
           <meta name='google-signin-client_id' content={process.env.CLIENT_ID} />
         </MetaTags>
